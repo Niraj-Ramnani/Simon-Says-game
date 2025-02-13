@@ -1,0 +1,127 @@
+* {
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, #2c3e50, #34495e);
+     color: white;
+ }
+ 
+ h1, h3 {
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 20px 0;
+ }
+ 
+ .row {
+     display: flex;
+ }
+ 
+ .btn {
+     height: 100px;
+     width: 100px;
+     margin: 10px;
+     border-radius: 20px;
+     border: 5px solid black;
+     font-size: 1.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: 0.2s ease-in-out;
+     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .btn:hover {
+     transform: scale(1.1);
+ }
+ 
+ .red { background-color: #e74c3c; }
+ .green { background-color: #2ecc71; }
+ .blue { background-color: #3498db; }
+ .yellow { background-color: #f1c40f; }
+ 
+ .flash {
+     background-color: white !important;
+     box-shadow: 0 0 20px white;
+ }
+ 
+ .uflash {
+     background-color: lightgreen !important;
+ }
+ 
+ .sbtn {
+     font-size: 1.5rem;
+     padding: 10px 20px;
+     background-color: #16a085;
+     color: white;
+     border: none;
+     border-radius: 50px;
+     box-shadow: 0 0 10px black;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+ 
+ .sbtn:hover {
+     background-color: #1abc9c;
+ }
+ 
+ .scorecard {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .content {
+     background: #ecf0f1;
+     padding: 20px;
+     border-radius: 20px;
+     width: 50%;
+     text-align: center;
+     color: black;
+ }
+ 
+ #ok {
+     margin-top: 10px;
+     padding: 10px 20px;
+     background-color: #e74c3c;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ #ok:hover {
+     background-color: #c0392b;
+ }
+ 
+ .shake {
+     animation: shake 0.2s ease-in-out;
+ }
+ 
+ @keyframes shake {
+     0% { transform: translateX(0); }
+     25% { transform: translateX(-10px); }
+     50% { transform: translateX(10px); }
+     75% { transform: translateX(-10px); }
+     100% { transform: translateX(0); }
+ }
+ 
