@@ -24,13 +24,12 @@ function playSound(it) {
 
 function btnflash(btn) {
     btn.classList.add("flash");
-    playSound(btn.id);
+    playSound("gclick");
     setTimeout(() => btn.classList.remove("flash"), 300);
 }
 
 function userflash(btn) {
     btn.classList.add("uflash");
-    playSound(btn.id);
     setTimeout(() => btn.classList.remove("uflash"), 300);
 }
 
@@ -66,6 +65,7 @@ function btnpress() {
     var ucolor = btn.id;
     userseq.push(ucolor);
     userflash(btn);
+    playSound("uclick")
     checkans(userseq.length - 1);
 }
 
@@ -81,10 +81,11 @@ function reset() {
 function score() {
     let scorecard = document.querySelector(".scorecard");
     scorecard.style.display = "flex";
-    playSound(score);
+    playSound("game")
     curscore.innerText = level - 1;
     high.innerText = maxi - 1;
     document.querySelector("#ok").addEventListener("click", () => {
+        playSound("score");
         scorecard.style.display = "none";
     });
 }
